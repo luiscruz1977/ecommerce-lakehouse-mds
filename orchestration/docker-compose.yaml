@@ -40,6 +40,7 @@ services:
       DATABRICKS_HOST: ${DATABRICKS_HOST}
       DATABRICKS_TOKEN: ${DATABRICKS_TOKEN}
       DATABRICKS_HTTP_PATH: ${DATABRICKS_HTTP_PATH}
+      _PIP_ADDITIONAL_REQUIREMENTS: dbt-databricks==1.8.7
     user: "${AIRFLOW_UID:-50000}:0"
     volumes:
       - ./dags:/opt/airflow/dags
@@ -60,6 +61,7 @@ services:
       DATABRICKS_HOST: ${DATABRICKS_HOST}
       DATABRICKS_TOKEN: ${DATABRICKS_TOKEN}
       DATABRICKS_HTTP_PATH: ${DATABRICKS_HTTP_PATH}
+      _PIP_ADDITIONAL_REQUIREMENTS: dbt-databricks==1.8.7
     user: "${AIRFLOW_UID:-50000}:0"
     volumes:
       - ./dags:/opt/airflow/dags
