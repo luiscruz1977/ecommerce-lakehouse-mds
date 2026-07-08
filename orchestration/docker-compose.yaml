@@ -45,6 +45,7 @@ services:
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
+      - ../ecommerce_gold:/opt/airflow/ecommerce_gold
     ports:
       - "8080:8080"
     command: webserver
@@ -66,6 +67,7 @@ services:
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
+      - ../ecommerce_gold:/opt/airflow/ecommerce_gold
     command: scheduler
 
 volumes:
