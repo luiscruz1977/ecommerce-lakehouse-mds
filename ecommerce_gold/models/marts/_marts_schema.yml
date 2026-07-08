@@ -1,0 +1,14 @@
+version 2:
+
+models:
+  - name: mart_revenue_by_category
+    description: "Gross vs Net revenues by product categroy"
+    columns:
+      - name: product_category
+        description: "Product category in english"
+      - name: gross_revenue
+        description: "Total gross value"
+      - name: net_revenue
+        description: "Total value for orders with status 'delivered'"          
+      - name: revenue_at_risk
+        description: "Difference between gross and net revenue"

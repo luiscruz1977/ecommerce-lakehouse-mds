@@ -1,3 +1,14 @@
+# Python
+venv/
+__pycache__/
 
+# Logs
+logs/
+
+# dbt artifacts
+target/
+dbt_packages/
+
+# Secrets
 .env
 orchestration/.env
