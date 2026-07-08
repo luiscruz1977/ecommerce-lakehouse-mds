@@ -14,16 +14,16 @@ with DAG(
     dbt_run = BashOperator(
         task_id="dbt_run",
         bash_command=(
-            "dbt run --project-dir /opt/airflow/dbt_project/ecommerce_gold "
-            "--profiles-dir /opt/airflow/dbt_project"
+            "dbt run --project-dir /opt/airflow/ecommerce_gold "
+            "--profiles-dir /opt/airflow/ecommerce_gold"
         ),
     )
 
     dbt_test = BashOperator(
         task_id="dbt_test",
         bash_command=(
-            "dbt test --project-dir /opt/airflow/dbt_project/ecommerce_gold "
-            "--profiles-dir /opt/airflow/dbt_project"
+            "dbt test --project-dir /opt/airflow/ecommerce_gold "
+            "--profiles-dir /opt/airflow/ecommerce_gold"
         ),
     )
 
